@@ -18,5 +18,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Buka jalur komunikasi di port 5000
 EXPOSE 5000
 
-# Perintah utama untuk menyalakan server menggunakan Gunicorn (Standar Produksi)
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+# Perintah utama untuk menyalakan server (Telah disesuaikan dengan aplikasi.py)
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "aplikasi:app"]
